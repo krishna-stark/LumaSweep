@@ -1,0 +1,212 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 6,
+    "identityHash": "511faf37b98a00b0ec3bb8a6c73f2dc4",
+    "entities": [
+      {
+        "tableName": "media_items",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`mediaStoreId` INTEGER NOT NULL, `uri` TEXT NOT NULL, `displayName` TEXT NOT NULL, `mimeType` TEXT NOT NULL, `width` INTEGER NOT NULL, `height` INTEGER NOT NULL, `fileSize` INTEGER NOT NULL, `dateTaken` INTEGER NOT NULL, `dateModified` INTEGER NOT NULL, `relativePath` TEXT NOT NULL, `sha256` TEXT, `perceptualHash` TEXT, `scanVersion` INTEGER NOT NULL, `ocrConfidence` REAL, `blurScore` REAL, `screenshot` INTEGER NOT NULL, `optimizedBytes` INTEGER NOT NULL, `optimizedWidth` INTEGER NOT NULL, `optimizedHeight` INTEGER NOT NULL, `analysisVersion` INTEGER NOT NULL, `semanticLabelsCsv` TEXT NOT NULL, `favorite` INTEGER NOT NULL, `protectionReason` TEXT, `optimizationQuality` INTEGER NOT NULL, `optimizationSimilarity` REAL NOT NULL, `optimizationMode` TEXT NOT NULL, `optimizedMimeType` TEXT NOT NULL, `optimizedExtension` TEXT NOT NULL, `screenshotCategory` TEXT NOT NULL, `optimizationStatus` TEXT NOT NULL, `optimizationSettingsFingerprint` TEXT NOT NULL, `optimizationRequiresReview` INTEGER NOT NULL, PRIMARY KEY(`mediaStoreId`))",
+        "fields": [
+          {
+            "fieldPath": "mediaStoreId",
+            "columnName": "mediaStoreId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uri",
+            "columnName": "uri",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "displayName",
+            "columnName": "displayName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mimeType",
+            "columnName": "mimeType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "width",
+            "columnName": "width",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "height",
+            "columnName": "height",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fileSize",
+            "columnName": "fileSize",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dateTaken",
+            "columnName": "dateTaken",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dateModified",
+            "columnName": "dateModified",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "relativePath",
+            "columnName": "relativePath",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sha256",
+            "columnName": "sha256",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "perceptualHash",
+            "columnName": "perceptualHash",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "scanVersion",
+            "columnName": "scanVersion",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ocrConfidence",
+            "columnName": "ocrConfidence",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "blurScore",
+            "columnName": "blurScore",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "screenshot",
+            "columnName": "screenshot",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizedBytes",
+            "columnName": "optimizedBytes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizedWidth",
+            "columnName": "optimizedWidth",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizedHeight",
+            "columnName": "optimizedHeight",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "analysisVersion",
+            "columnName": "analysisVersion",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "semanticLabelsCsv",
+            "columnName": "semanticLabelsCsv",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "favorite",
+            "columnName": "favorite",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "protectionReason",
+            "columnName": "protectionReason",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "optimizationQuality",
+            "columnName": "optimizationQuality",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizationSimilarity",
+            "columnName": "optimizationSimilarity",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizationMode",
+            "columnName": "optimizationMode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizedMimeType",
+            "columnName": "optimizedMimeType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizedExtension",
+            "columnName": "optimizedExtension",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "screenshotCategory",
+            "columnName": "screenshotCategory",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizationStatus",
+            "columnName": "optimizationStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizationSettingsFingerprint",
+            "columnName": "optimizationSettingsFingerprint",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optimizationRequiresReview",
+            "columnName": "optimizationRequiresReview",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "mediaStoreId"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '511faf37b98a00b0ec3bb8a6c73f2dc4')"
+    ]
+  }
+}
